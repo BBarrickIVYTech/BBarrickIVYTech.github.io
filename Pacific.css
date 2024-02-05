@@ -25,7 +25,14 @@ header{
 h1 {
     background-color: #002171;
     color: #ffffff;
+    text-align: center;
+    padding-top: 0.5em;
     font-family: Georgia, serif;
+}
+
+main{
+    padding: 0 2em;
+    display: block;
 }
 
 h1 {
@@ -35,10 +42,16 @@ h1 {
 nav {
     font-weight: bold;
     background-color: #BBDEFB; 
+    padding: 0.5em 0.5em 0.5em 0.5em; 
+    text-align: center; 
 }
 
 h2 {
     color: #1976D2;
+    font-family: Georgia, serif;
+}
+
+h3{
     font-family: Georgia, serif;
 }
 
@@ -56,4 +69,5 @@ footer {
     font-size: 0.70em;
     font-style: italic;
     text-align: center;
+    padding: 1em;
 }
