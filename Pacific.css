@@ -10,6 +10,12 @@ body {
     margin-left: auto; 
 }
 
+header{
+    background-color: #002171
+    color(srgb rgb(255, 255, 255) rgb(25rgb(255, 255, 255)55, 255) blue);
+    font-family: Georgia serif;
+}
+
 h1 {
     background-color: #002171;
     color: #ffffff;
