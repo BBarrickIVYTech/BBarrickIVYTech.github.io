@@ -71,3 +71,12 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+#homehero {
+    background-image: url('img/Pacific.jpg');
+    background-size: cover; 
+    height: 400px; 
+    width: 100%; 
+}
+
+
