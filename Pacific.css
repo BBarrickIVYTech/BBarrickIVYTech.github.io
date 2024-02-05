@@ -1,47 +1,45 @@
-/* Global styles for the document */
+
 body {
     background-color: #FFFFFF;
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
 }
+.wrapper{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; 
+}
 
-/* Styles for the header */
 header {
     background-color: #002171;
     color: #d80e0e;
     font-family: Georgia, serif;
 }
 
-/* Styles for h1 */
 h1 {
     line-height: 200%;
 }
 
-/* Styles for the nav */
 nav {
     font-weight: bold;
-    background-color: #BBDEFB; /* sky-blue background color */
+    background-color: #BBDEFB; 
 }
 
-/* Styles for h2 */
 h2 {
-    color: #1976D2; /* medium-blue text color */
+    color: #1976D2;
     font-family: Georgia, serif;
 }
 
-/* Styles for dt */
 dt {
-    color: #002171; /* dark-blue text color */
+    color: #002171; 
     font-weight: bold;
 }
 
-/* Styles for a class named resort */
 .resort {
-    color: #1976D2; /* medium-blue text color */
+    color: #1976D2; 
     font-size: 1.2em;
 }
 
-/* Styles for the footer */
 footer {
     font-size: 0.70em;
     font-style: italic;
