@@ -21,23 +21,36 @@ body {
 }
 
 .left-column {
-    width: 200px; /* Set width for the left column */
+    float: left; /* Float the left column to the left */
+    width: 160px; /* Set width for the left column */
+    padding: 0; /* Set padding to 0 */
+    font-size: 1.2em; /* Set font size */
+    position: fixed; /* Set position to fixed */
 }
 
 nav {
-    background-color: #BBDEFB; 
-    padding: 0.5em; 
-    text-align: center; 
+    background-color: inherit; /* Inherit background color from the wrapper */
 }
 
-nav a {
-    display: block; /* Ensures each link takes up full width */
-    padding: 0.5em 0; /* Add vertical padding */
+nav a:link,
+nav a:visited {
+    color: #FFFFFF; /* Set color for unvisited and visited hyperlinks */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    color: #90C7E3; /* Set color for hyperlinks on hover */
+}
+
+nav ul {
+    list-style-type: none; /* Remove list markers */
+    padding-left: 1em; /* Add left padding */
 }
 
 .right-column {
-    flex-grow: 1; /* Allow the right column to grow and occupy remaining space */
-    padding: 0 20px; /* Add padding for better spacing */
+    margin-left: 170px; /* Set left margin for the right column */
+    background-color: #FFFFFF; /* Set background color */
+    overflow: auto; /* Prevent display issues for floated elements within the main element */
 }
 
 header {
@@ -54,8 +67,22 @@ h1 {
     margin-top: 0; /* Remove top margin from h1 */
 }
 
-#homehero {
-    width: 100%; /* Ensure the image spans the width of the container */
+#homehero,
+#yurthero,
+#trailhero {
+    margin-left: 170px; /* Set left margin for hero image areas */
+}
+
+footer {
+    background-color: #FFFFFF; /* Set background color */
+    margin-left: 170px; /* Set left margin for footer */
+    padding: 1em; /* Add padding for better spacing */
+}
+
+section {
+    float: left; /* Float the sections to the left */
+    width: 33%; /* Set width for sections */
+    padding: 2em; /* Add padding */
 }
 
 .resort {
