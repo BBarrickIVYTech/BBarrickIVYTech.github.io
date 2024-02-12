@@ -12,10 +12,12 @@ body {
     display: flex; /* Use flexbox for layout */
     max-width: 1200px; /* Adjust max-width as needed */
     margin: 0 auto; /* Center the wrapper horizontally */
+    overflow: hidden; /* Prevents content overflow */
 }
 
 .left-column {
     width: 200px; /* Set width for the left column */
+    z-index: 1; /* Ensure the navigation is below the header */
 }
 
 nav {
@@ -24,13 +26,23 @@ nav {
     text-align: center; 
 }
 
-nav h3 {
-    margin: 0; /* Remove default margin */
+nav a {
+    display: block; /* Ensures each link takes up full width */
+    padding: 0.5em 0; /* Add vertical padding */
 }
 
 .right-column {
     flex-grow: 1; /* Allow the right column to grow and occupy remaining space */
     padding: 0 20px; /* Add padding for better spacing */
+}
+
+header {
+    background-color: #002171;
+    color: #ffffff;
+    padding: 1em; /* Add padding for better spacing */
+    text-align: center; /* Center align header content */
+    position: relative; /* Allow z-index to work */
+    z-index: 2; /* Ensure the header is above the navigation */
 }
 
 h1 {
