@@ -17,7 +17,6 @@ body {
 
 .left-column {
     width: 200px; /* Set width for the left column */
-    z-index: 1; /* Ensure the navigation is below the header */
 }
 
 nav {
@@ -41,8 +40,6 @@ header {
     color: #ffffff;
     padding: 1em; /* Add padding for better spacing */
     text-align: center; /* Center align header content */
-    position: relative; /* Allow z-index to work */
-    z-index: 2; /* Ensure the header is above the navigation */
 }
 
 h1 {
