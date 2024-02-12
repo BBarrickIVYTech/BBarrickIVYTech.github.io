@@ -8,57 +8,37 @@ body {
     padding: 0; /* Remove default padding */
 }
 
-header {
-    background-color: #002171;
-    color: #ffffff;
-    padding: 1em; /* Add padding for better spacing */
-    text-align: center; /* Center align header content */
+.wrapper {
+    display: flex; /* Use flexbox for layout */
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the wrapper horizontally */
+}
+
+.left-column {
+    width: 200px; /* Set width for the left column */
 }
 
 nav {
-    display: inline-block; /* Ensure the nav is inline with the h1 */
+    background-color: #BBDEFB; 
+    padding: 0.5em; 
+    text-align: center; 
 }
 
 nav h3 {
     margin: 0; /* Remove default margin */
 }
 
-#homehero {
-    display: block; /* Display the image as a block element */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 100%; /* Ensure the image spans the width of the container */
-}
-
-.wrapper {
-    width: 80%;
-    margin: 0 auto; /* Center the wrapper horizontally */
-    background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Add padding for better spacing */
-}
-
-main {
-    padding: 0 2em;
+.right-column {
+    flex-grow: 1; /* Allow the right column to grow and occupy remaining space */
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 h1 {
-    margin: 0; /* Remove default margin */
+    margin-top: 0; /* Remove top margin from h1 */
 }
 
-h2 {
-    color: #1976D2;
-    font-family: Georgia, serif;
-}
-
-h3 {
-    font-family: Georgia, serif;
-}
-
-dt {
-    color: #002171; 
-    font-weight: bold;
+#homehero {
+    width: 100%; /* Ensure the image spans the width of the container */
 }
 
 .resort {
