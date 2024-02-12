@@ -34,7 +34,7 @@ nav {
 
 nav a:link,
 nav a:visited {
-    color: #FFFFFF; /* Set color for unvisited and visited hyperlinks */
+    color: #421af1; /* Set color for unvisited and visited hyperlinks */
     text-decoration: none; /* Remove underline */
 }
 
