@@ -4,44 +4,47 @@ body {
     font-family: Verdana, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); 
     background-repeat: no-repeat;
-    display: flex; /* Use flexbox for layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.wrapper{
-    flex-grow: 1; /* Allow wrapper to grow and occupy remaining space */
+header {
+    background-color: #002171;
+    color: #ffffff;
+    padding: 1em; /* Add padding for better spacing */
+    text-align: center; /* Center align header content */
+}
+
+nav {
+    display: inline-block; /* Ensure the nav is inline with the h1 */
+}
+
+nav h3 {
+    margin: 0; /* Remove default margin */
+}
+
+#homehero {
+    display: block; /* Display the image as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; /* Ensure the image spans the width of the container */
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto; /* Center the wrapper horizontally */
     background-color: #FFFFFF;
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-right: auto;
-    margin-left: auto; 
-    display: flex; /* Use flexbox for layout */
-}
-
-header{
-    background-color: #002171;
-    color: #ffffff;
-    font-family: Georgia, serif;
-    padding: 1em; /* Add padding for better spacing */
-}
-
-h1 {
-    text-align: center;
-    padding-top: 0.5em;
-    font-family: Georgia, serif;
-    margin: 0; /* Remove default margin */
-}
-
-nav {
-    width: 200px; /* Set fixed width for the navigation */
-    font-weight: bold;
-    background-color: #BBDEFB; 
-    padding: 0.5em; 
-    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
 }
 
 main {
     padding: 0 2em;
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
 }
 
 h2 {
@@ -68,27 +71,4 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 1em;
-}
-
-#homehero {
-    background-image: url('img/Pacific.jpg');
-    background-size: cover; 
-    height: 400px; 
-    width: 100%; 
-}
-
-#yurthero {
-    height: 300px;
-    background-image: url('img/Yurt.png'); 
-    background-size: 100% 100%; 
-}
-
-#trailhero {
-    height: 300px; 
-    background-image: url('img/Forest.jpg'); 
-    background-size: 100% 100%;
-}
-
-nav a {
-    text-decoration: none;
 }
