@@ -12,6 +12,8 @@ body {
 
 .wrapper {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -24,7 +26,7 @@ nav {
 }
 
 nav a {
-    display: inline-block;
+    display: block; /* Display links as blocks for stacking */
     padding: 10px 15px;
     color: #ffffff;
     text-decoration: none;
@@ -71,11 +73,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    #desktop {
-        display: none;
-    }
-
-    #mobile {
-        display: inline;
+    nav a {
+        display: block; /* Display links as blocks for stacking */
+        padding: 10px 0; /* Adjust padding for better spacing */
     }
 }
