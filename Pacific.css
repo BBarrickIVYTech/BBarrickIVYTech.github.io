@@ -17,14 +17,10 @@ body {
     overflow: hidden;
 }
 
-.left-column {
-    display: block;
-}
-
 nav {
-    display: none;
-    text-align: center;
     background-color: #002171;
+    text-align: center;
+    padding: 1em 0;
 }
 
 nav a {
@@ -32,12 +28,6 @@ nav a {
     padding: 10px 15px;
     color: #ffffff;
     text-decoration: none;
-}
-
-.right-column {
-    margin-left: 170px;
-    background-color: #FFFFFF;
-    overflow: auto;
 }
 
 header {
@@ -61,6 +51,7 @@ h1 {
 footer {
     background-color: #FFFFFF;
     padding: 1em;
+    text-align: center;
 }
 
 section {
@@ -80,26 +71,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .left-column {
-        display: none;
-    }
-
-    nav {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px) {
     #desktop {
         display: none;
     }
-}
 
-#mobile {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
     #mobile {
         display: inline;
     }
