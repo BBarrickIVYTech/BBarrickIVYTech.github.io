@@ -70,5 +70,20 @@
             <footer>© 2020 Pacific Trails Resort</footer>
         </div>
     </div>
+
+    <script>
+        function displayPopup() {
+            var popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.innerHTML = '<p>Today only - 10% off on a weekend - coupon code ZenTen</p>';
+            document.body.appendChild(popup);
+        }
+
+    
+        window.onload = function() {
+            displayPopup();
+        };
+    </script>
+
 </body>
 </html>
