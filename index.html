@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Pacific.css">
-    <title>Pacific Trails Resort</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Trails Resort</title>
+    <link rel="stylesheet" href="Pacific.css">
+    <script>
+        function displayLastModifiedDate() {
+            var lastModified = document.lastModified;
+            var message = document.createElement('p');
+            message.textContent = 'This page was last modified on: ' + lastModified;
+            var footer = document.querySelector('footer');
+            footer.appendChild(message);
+        }
+    </script>
 </head>
-<script>
-    function displayLastModifiedDate() {
-        var lastModified = document.lastModified;
-        
-        var message = document.createElement('p');
-        message.textContent = 'This page was last modified on: ' + lastModified;
-    
-        var footer = document.getElementById('footer');
-    
-        footer.appendChild(message);
-    }
-</script>
-<body>
+<body onload="displayLastModifiedDate()">
     <header>
         <h1>Pacific Trails Resort</h1>
         <nav>
@@ -30,7 +27,6 @@
     </header>
 
     <div class="wrapper">
-        <!-- Right Column for Main Content -->
         <div class="right-column">
             <img src="img/Pacific.jpg" height="450" width="900" alt="home page mountain" id="homehero">
             <main>
@@ -47,13 +43,13 @@
                 <video width="320" height="240" controls>
                     <source src="pacific.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                  </video>
+                </video>
 
                 <div>
                     Pacific Trails Resort<br>
                     12010 Pacific Trails Road<br>
                     Zephyr, CA 95555<br>
-                    <span id="mobile"><a href="tel:888-555-5555"></a></span>
+                    <span id="mobile"><a href="tel:888-555-5555">888-555-5555</a></span>
                     <span id="desktop">888-555-5555</span>
                 </div>
             </main>
@@ -62,4 +58,3 @@
     </div>
 </body>
 </html>
-
