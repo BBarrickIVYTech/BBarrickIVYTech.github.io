@@ -103,3 +103,8 @@ td, th {
 tr:nth-of-type(even) {
     background-color: #DFEDF8;
 }
+
+video {
+    float: right;
+    margin: 2em;
+}
