@@ -6,6 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<script>
+    function displayLastModifiedDate() {
+        var lastModified = document.lastModified;
+        
+        var message = document.createElement('p');
+        message.textContent = 'This page was last modified on: ' + lastModified;
+    
+        var footer = document.getElementById('footer');
+    
+        footer.appendChild(message);
+    }
+</script>
 <body>
     <header>
         <h1>Pacific Trails Resort</h1>
