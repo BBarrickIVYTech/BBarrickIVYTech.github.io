@@ -48,5 +48,25 @@
             <p>&copy; 2024 Wizards & Wand Cafe. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('reservationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get form data
+                var firstName = document.getElementById('firstName').value;
+                var lastName = document.getElementById('lastName').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+
+                // Display confirmation message
+                var confirmationMessage = 'Thank you, ' + firstName + ', for your reservation!';
+                alert(confirmationMessage);
+
+                // Reset form fields
+                document.getElementById('reservationForm').reset();
+            });
+        });
+    </script>
 </body>
 </html>
