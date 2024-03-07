@@ -96,3 +96,15 @@ input[type="submit"]:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+.menu-category {
+    margin-bottom: 20px; 
+}
+
+.menu-category h3 {
+    font-size: 18px; 
+}
+
+.menu-category p {
+    margin: 0; 
+    padding: 5px 0; 
+}
