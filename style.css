@@ -5,7 +5,8 @@ body, h1, h2, h3, p, ul, li {
 
 
 body {
-    background-color: #f5f5f5; 
+    background-color: bisque;
+    background-image:url("parchment.jpg"); 
     font-family: Arial, sans-serif;
 }
 
